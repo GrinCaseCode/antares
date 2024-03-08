@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css?ver=1.1" />
+	<link rel="stylesheet" href="css/media.css?ver=1.1" />
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<div class="buttons-fixed">
+			<a href="#" class="btn-fixed btn-fixed_home">
+				<i class="far fa-home"></i>
+			</a>
+			<a href="#" class="btn-fixed btn-fixed_catalog">
+				<img src="img/menu.svg" alt="alt">
+			</a>
+			<a href="#" class="btn-fixed btn-fixed_search">
+				<img src="img/search2.svg" alt="alt">
+			</a>
+			<a href="#" class="btn-fixed btn-fixed_basket">
+				<img src="img/ic_basket.svg" alt="alt">
+				<div class="btn-fixed__value">1</div>
+			</a>
+			<a href="#" class="btn-fixed btn-fixed_tg">
+				<img src="img/ic_tg.svg" alt="alt">
+			</a>
+			<a href="#" class="btn-fixed btn-fixed_wp">
+				<img src="img/ic_wp.svg" alt="alt">
+			</a>
+		</div>
+
+		<header class="header">
+			<div class="header-top">
+				<div class="container">
+					<div class="header__wrapper">
+						<ul class="navigation">
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Покупателям</a></li>
+							<li><a href="#">Благодарности</a></li>
+							<li><a href="#">Наши объекты</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+						<div class="header__info">
+							<div class="header__location">Санкт-Петербург</div>
+							<a href="mailto:sale10316@spb-antares.ru" class="header__mail">sale10316@spb-antares.ru</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-middle">
+				<div class="container">
+					<div class="header__wrapper">
+						<span class='sandwich'>
+							<span class='sw-topper'></span>
+							<span class='sw-bottom'></span>
+							<span class='sw-footer'></span>
+						</span>
+						<div class="logo-wrap">
+							<a href="#" class="logo">
+								<img src="img/logo.svg" alt="alt">
+							</a>
+							<div class="logo-descr">Поставка инженерного оборудования для систем водоснабжения, отопления, канализации по Ленинградской области</div>
+						</div>
+						<div class="form-search">
+							<form>
+								<input type="text" placeholder="Поиск по товарам" required="required">
+								<button class="btn-search"></button>
+							</form>
+						</div>
+						<div class="header__contacts">
+							<a href="#callback" class="btn-main fancybox">Оставить заявку</a>
+							<ul class="phones">
+								<li><a href="tel:+79893541310">+7 (989) 354-13-10</a></li>
+								<li><a href="tel:+74956467726">+7 (495) 646-77-26</a></li>
+								<li><a href="tel:+78124588064">+7 (812) 458-80-64</a></li>
+							</ul>
+						</div>
+						<a href="tel:+79893541310" class="phone-mobile">
+							<i class="fas fa-phone-alt"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<div class="container">
+					<div class="header__wrapper">
+						<a href="#" class="btn-catalog"><img src="img/menu.svg" alt="alt">Каталог</a>
+						<ul class="menu">
+							<li><a href="#">Насосное оборудование</a></li>
+							<li><a href="#">Фланцевая арматура</a></li>
+							<li><a href="#">Керамогранит</a></li>
+							<li><a href="#">Канализационные дробилки для КНС</a></li>
+							<li><a href="#">Резьбовая/муфтовая арматура и резьбовые соединения</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="menu-mobile">
+				<ul class="navigation">
+					<li><a href="#">О компании</a></li>
+					<li class="navigation__haschild">
+						<a href="#">Каталог</a>
+						<ul>
+							<li><a href="#">Насосное оборудование</a></li>
+							<li><a href="#">Фланцевая арматура</a></li>
+							<li><a href="#">Керамогранит</a></li>
+							<li><a href="#">Канализационные дробилки для КНС</a></li>
+							<li><a href="#">Резьбовая/муфтовая арматура и резьбовые соединения</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Покупателям</a></li>
+					<li><a href="#">Благодарности</a></li>
+					<li><a href="#">Наши объекты</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<div class="header__info">
+					<div class="header__location">Санкт-Петербург</div>
+					<a href="mailto:sale10316@spb-antares.ru" class="header__mail">sale10316@spb-antares.ru</a>
+				</div>
+				<div class="header__contacts">
+					<a href="#callback" class="btn-main fancybox">Оставить заявку</a>
+					<ul class="phones">
+						<li><a href="tel:+79893541310">+7 (989) 354-13-10</a></li>
+						<li><a href="tel:+74956467726">+7 (495) 646-77-26</a></li>
+						<li><a href="tel:+78124588064">+7 (812) 458-80-64</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="menu-overlay"></div>
+		</header>
+
+		<section class="billbord">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8">
+						<ul class="slider-billbord">
+							<li>
+								<a href="#" class="slider-billbord__item">
+									<img src="img/billbord1.jpg" alt="alt">
+								</a>
+							</li>
+							<li>
+								<a href="#" class="slider-billbord__item">
+									<img src="img/billbord1.jpg" alt="alt">
+								</a>
+							</li>
+							<li>
+								<a href="#" class="slider-billbord__item">
+									<img src="img/billbord1.jpg" alt="alt">
+								</a>
+							</li>
+							<li>
+								<a href="#" class="slider-billbord__item">
+									<img src="img/billbord1.jpg" alt="alt">
+								</a>
+							</li>
+							<li>
+								<a href="#" class="slider-billbord__item">
+									<img src="img/billbord1.jpg" alt="alt">
+								</a>
+							</li>
+							<li>
+								<a href="#" class="slider-billbord__item">
+									<img src="img/billbord1.jpg" alt="alt">
+								</a>
+							</li>
+							<li>
+								<a href="#" class="slider-billbord__item">
+									<img src="img/billbord1.jpg" alt="alt">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-4">
+						<div class="row">
+							<div class="col-lg-12 col-md-6">
+								<a href="#" class="item-banner">
+									<img src="img/banner1.jpg" alt="alt">
+									<span>Керамогранит и плитка LB-Ceramics</span>
+								</a>
+							</div>
+							<div class="col-lg-12 col-md-6">
+								<a href="#" class="item-banner">
+									<img src="img/banner2.jpg" alt="alt">
+									<span>Водомерные узлы по листам ЦИРВ</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="categories">
+			<div class="container">
+				<h2 class="title-section">Каталог оборудования и материалов для инженерных систем</h2>
+				<div class="descr-section">В каталоге представлена продукция ведущих производителей оборудования и материалов для инженерных систем  «DENDOR», «ABRA», «Дженебре».</div>
+				<div class="row row_categories">
+					<div class="col-main">
+						<div class="item-category">
+							<div class="item-category__image">
+								<img src="img/category1.svg" alt="alt">
+							</div>
+							<div class="item-category__title">Бренды</div>
+							<div class="item-category__content">
+								<ul>
+									<li><a href="#">AVK</a></li>
+									<li><a href="#">Hawle</a></li>
+									<li><a href="#">ABRA</a></li>
+									<li><a href="#">ALSO</a></li>
+									<li><a href="#">Aquario</a></li>
+									<li><a href="#">BARRY</a></li>
+									<li><a href="#">AVK</a></li>
+									<li><a href="#">Hawle</a></li>
+									<li><a href="#">ABRA</a></li>
+									<li><a href="#">ALSO</a></li>
+									<li><a href="#">Aquario</a></li>
+									<li><a href="#">BARRY</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-main">
+						<div class="item-category">
+							<div class="item-category__image">
+								<img src="img/category2.png" alt="alt">
+							</div>
+							<div class="item-category__title">Бренды</div>
+							<div class="item-category__content">
+								<ul>
+									<li><a href="#">Айриш</a></li>
+									<li><a href="#">Альбервуд</a></li>
+									<li><a href="#">Андерссон</a></li>
+									<li><a href="#">Аспен</a></li>
+									<li><a href="#">Астрид</a></li>
+									<li><a href="#">Блисс</a></li>
+									<li><a href="#">Айриш</a></li>
+									<li><a href="#">Альбервуд</a></li>
+									<li><a href="#">Андерссон</a></li>
+									<li><a href="#">Аспен</a></li>
+									<li><a href="#">Астрид</a></li>
+									<li><a href="#">Блисс</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-main">
+						<div class="item-category">
+							<div class="item-category__image">
+								<img src="img/category3.png" alt="alt">
+							</div>
+							<div class="item-category__title">Трубы</div>
+							<div class="item-category__content">
+								<ul>
+									<li><a href="#">Полипропиленовые трубы</a></li>
+									<li><a href="#">Трубы для внутренней канализаци</a></li>
+									<li><a href="#">Трубы для наружной канализации</a></li>
+									<li><a href="#">Чугунные трубы SML</a></li>
+									<li><a href="#">Кабелезащитные трубы</a></li>
+									<li><a href="#">Полипропиленовые трубы</a></li>
+									<li><a href="#">Трубы для внутренней канализаци</a></li>
+									<li><a href="#">Трубы для наружной канализации</a></li>
+									<li><a href="#">Чугунные трубы SML</a></li>
+									<li><a href="#">Кабелезащитные трубы</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-main">
+						<div class="item-category">
+							<div class="item-category__image">
+								<img src="img/category4.png" alt="alt">
+							</div>
+							<div class="item-category__title">Фитинги <br>и фасонные части</div>
+							<div class="item-category__content">
+								<ul>
+									<li><a href="#">Полипропиленовые трубы</a></li>
+									<li><a href="#">Трубы для внутренней канализаци</a></li>
+									<li><a href="#">Трубы для наружной канализации</a></li>
+									<li><a href="#">Чугунные трубы SML</a></li>
+									<li><a href="#">Кабелезащитные трубы</a></li>
+									<li><a href="#">Полипропиленовые трубы</a></li>
+									<li><a href="#">Трубы для внутренней канализаци</a></li>
+									<li><a href="#">Трубы для наружной канализации</a></li>
+									<li><a href="#">Чугунные трубы SML</a></li>
+									<li><a href="#">Кабелезащитные трубы</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-main">
+						<div class="item-category">
+							<div class="item-category__image">
+								<img src="img/category5.png" alt="alt">
+							</div>
+							<div class="item-category__title">Запорная арматура и электроприводы</div>
+							<div class="item-category__content">
+								<ul>
+									<li><a href="#">Полипропиленовые трубы</a></li>
+									<li><a href="#">Трубы для внутренней канализаци</a></li>
+									<li><a href="#">Трубы для наружной канализации</a></li>
+									<li><a href="#">Чугунные трубы SML</a></li>
+									<li><a href="#">Кабелезащитные трубы</a></li>
+									<li><a href="#">Полипропиленовые трубы</a></li>
+									<li><a href="#">Трубы для внутренней канализаци</a></li>
+									<li><a href="#">Трубы для наружной канализации</a></li>
+									<li><a href="#">Чугунные трубы SML</a></li>
+									<li><a href="#">Кабелезащитные трубы</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-main">
+						<div class="item-category">
+							<div class="item-category__image">
+								<img src="img/category6.png" alt="alt">
+							</div>
+							<div class="item-category__title">Насосное оборудование и насосы</div>
+							<div class="item-category__content">
+								<ul>
+									<li><a href="#">Полипропиленовые трубы</a></li>
+									<li><a href="#">Трубы для внутренней канализаци</a></li>
+									<li><a href="#">Трубы для наружной канализации</a></li>
+									<li><a href="#">Чугунные трубы SML</a></li>
+									<li><a href="#">Кабелезащитные трубы</a></li>
+									<li><a href="#">Полипропиленовые трубы</a></li>
+									<li><a href="#">Трубы для внутренней канализаци</a></li>
+									<li><a href="#">Трубы для наружной канализации</a></li>
+									<li><a href="#">Чугунные трубы SML</a></li>
+									<li><a href="#">Кабелезащитные трубы</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-main">
+						<div class="item-category">
+							<div class="item-category__image">
+								<img src="img/category7.png" alt="alt">
+							</div>
+							<div class="item-category__title">Балансировочная и регулирующая арматура, автоматика</div>
+							<div class="item-category__content">
+								<ul>
+									<li><a href="#">Полипропиленовые трубы</a></li>
+									<li><a href="#">Трубы для внутренней канализаци</a></li>
+									<li><a href="#">Трубы для наружной канализации</a></li>
+									<li><a href="#">Чугунные трубы SML</a></li>
+									<li><a href="#">Кабелезащитные трубы</a></li>
+									<li><a href="#">Полипропиленовые трубы</a></li>
+									<li><a href="#">Трубы для внутренней канализаци</a></li>
+									<li><a href="#">Трубы для наружной канализации</a></li>
+									<li><a href="#">Чугунные трубы SML</a></li>
+									<li><a href="#">Кабелезащитные трубы</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-main">
+						<div class="item-category">
+							<div class="item-category__image">
+								<img src="img/category8.png" alt="alt">
+							</div>
+							<div class="item-category__title">Элементы трубопровода и крепеж</div>
+							<div class="item-category__content">
+								<ul>
+									<li><a href="#">Полипропиленовые трубы</a></li>
+									<li><a href="#">Трубы для внутренней канализаци</a></li>
+									<li><a href="#">Трубы для наружной канализации</a></li>
+									<li><a href="#">Чугунные трубы SML</a></li>
+									<li><a href="#">Кабелезащитные трубы</a></li>
+									<li><a href="#">Полипропиленовые трубы</a></li>
+									<li><a href="#">Трубы для внутренней канализаци</a></li>
+									<li><a href="#">Трубы для наружной канализации</a></li>
+									<li><a href="#">Чугунные трубы SML</a></li>
+									<li><a href="#">Кабелезащитные трубы</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-main">
+						<div class="item-category">
+							<div class="item-category__image">
+								<img src="img/category9.png" alt="alt">
+							</div>
+							<div class="item-category__title">Счетчики и комплектующие</div>
+							<div class="item-category__content">
+								<ul>
+									<li><a href="#">Полипропиленовые трубы</a></li>
+									<li><a href="#">Трубы для внутренней канализаци</a></li>
+									<li><a href="#">Трубы для наружной канализации</a></li>
+									<li><a href="#">Чугунные трубы SML</a></li>
+									<li><a href="#">Кабелезащитные трубы</a></li>
+									<li><a href="#">Полипропиленовые трубы</a></li>
+									<li><a href="#">Трубы для внутренней канализаци</a></li>
+									<li><a href="#">Трубы для наружной канализации</a></li>
+									<li><a href="#">Чугунные трубы SML</a></li>
+									<li><a href="#">Кабелезащитные трубы</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-main">
+						<div class="item-category">
+							<div class="item-category__image">
+								<img src="img/category10.png" alt="alt">
+							</div>
+							<div class="item-category__title">Водомерные узлы <br>ЦИРВ 02А</div>
+							<div class="item-category__content">
+								<ul>
+									<li><a href="#">Полипропиленовые трубы</a></li>
+									<li><a href="#">Трубы для внутренней канализаци</a></li>
+									<li><a href="#">Трубы для наружной канализации</a></li>
+									<li><a href="#">Чугунные трубы SML</a></li>
+									<li><a href="#">Кабелезащитные трубы</a></li>
+									<li><a href="#">Полипропиленовые трубы</a></li>
+									<li><a href="#">Трубы для внутренней канализаци</a></li>
+									<li><a href="#">Трубы для наружной канализации</a></li>
+									<li><a href="#">Чугунные трубы SML</a></li>
+									<li><a href="#">Кабелезащитные трубы</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-main">
+						<div class="item-category">
+							<div class="item-category__image">
+								<img src="img/category11.png" alt="alt">
+							</div>
+							<div class="item-category__title">Радиаторы отопления и арматура</div>
+							<div class="item-category__content">
+								<ul>
+									<li><a href="#">Полипропиленовые трубы</a></li>
+									<li><a href="#">Трубы для внутренней канализаци</a></li>
+									<li><a href="#">Трубы для наружной канализации</a></li>
+									<li><a href="#">Чугунные трубы SML</a></li>
+									<li><a href="#">Кабелезащитные трубы</a></li>
+									<li><a href="#">Полипропиленовые трубы</a></li>
+									<li><a href="#">Трубы для внутренней канализаци</a></li>
+									<li><a href="#">Трубы для наружной канализации</a></li>
+									<li><a href="#">Чугунные трубы SML</a></li>
+									<li><a href="#">Кабелезащитные трубы</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-main">
+						<div class="item-category">
+							<div class="item-category__image">
+								<img src="img/category12.png" alt="alt">
+							</div>
+							<div class="item-category__title">Отводная <br>арматура</div>
+							<div class="item-category__content">
+								<ul>
+									<li><a href="#">Полипропиленовые трубы</a></li>
+									<li><a href="#">Трубы для внутренней канализаци</a></li>
+									<li><a href="#">Трубы для наружной канализации</a></li>
+									<li><a href="#">Чугунные трубы SML</a></li>
+									<li><a href="#">Кабелезащитные трубы</a></li>
+									<li><a href="#">Полипропиленовые трубы</a></li>
+									<li><a href="#">Трубы для внутренней канализаци</a></li>
+									<li><a href="#">Трубы для наружной канализации</a></li>
+									<li><a href="#">Чугунные трубы SML</a></li>
+									<li><a href="#">Кабелезащитные трубы</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-main">
+						<div class="item-category">
+							<div class="item-category__image">
+								<img src="img/category13.png" alt="alt">
+							</div>
+							<div class="item-category__title">Инструмент <br>и расходные материалы</div>
+							<div class="item-category__content">
+								<ul>
+									<li><a href="#">Полипропиленовые трубы</a></li>
+									<li><a href="#">Трубы для внутренней канализаци</a></li>
+									<li><a href="#">Трубы для наружной канализации</a></li>
+									<li><a href="#">Чугунные трубы SML</a></li>
+									<li><a href="#">Кабелезащитные трубы</a></li>
+									<li><a href="#">Полипропиленовые трубы</a></li>
+									<li><a href="#">Трубы для внутренней канализаци</a></li>
+									<li><a href="#">Трубы для наружной канализации</a></li>
+									<li><a href="#">Чугунные трубы SML</a></li>
+									<li><a href="#">Кабелезащитные трубы</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-main">
+						<div class="item-category">
+							<div class="item-category__image">
+								<img src="img/category14.png" alt="alt">
+							</div>
+							<div class="item-category__title">Вентиляция </div>
+							<div class="item-category__content">
+								<ul>
+									<li><a href="#">Полипропиленовые трубы</a></li>
+									<li><a href="#">Трубы для внутренней канализаци</a></li>
+									<li><a href="#">Трубы для наружной канализации</a></li>
+									<li><a href="#">Чугунные трубы SML</a></li>
+									<li><a href="#">Кабелезащитные трубы</a></li>
+									<li><a href="#">Полипропиленовые трубы</a></li>
+									<li><a href="#">Трубы для внутренней канализаци</a></li>
+									<li><a href="#">Трубы для наружной канализации</a></li>
+									<li><a href="#">Чугунные трубы SML</a></li>
+									<li><a href="#">Кабелезащитные трубы</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-main">
+						<div class="item-category">
+							<div class="item-category__image">
+								<img src="img/category15.png" alt="alt">
+							</div>
+							<div class="item-category__title">Мембранные <br>баки</div>
+							<div class="item-category__content">
+								<ul>
+									<li><a href="#">Полипропиленовые трубы</a></li>
+									<li><a href="#">Трубы для внутренней канализаци</a></li>
+									<li><a href="#">Трубы для наружной канализации</a></li>
+									<li><a href="#">Чугунные трубы SML</a></li>
+									<li><a href="#">Кабелезащитные трубы</a></li>
+									<li><a href="#">Полипропиленовые трубы</a></li>
+									<li><a href="#">Трубы для внутренней канализаци</a></li>
+									<li><a href="#">Трубы для наружной канализации</a></li>
+									<li><a href="#">Чугунные трубы SML</a></li>
+									<li><a href="#">Кабелезащитные трубы</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="advantages">
+			<div class="container">
+				<h2 class="title-section">Почему с нами легко работать?</h2>
+				<div class="descr-section">Осуществим доставку оборудования на ваш объект в кратчайшие сроки. Заберем или замени в случае ошибки. Подберем качественный аналог брендов, ушедших с территории РФ.</div>
+			</div>
+			<div class="advantages__block">
+				<div class="container">
+					<div class="row row_advantages">
+						<div class="col-lg-4 col-md-6">
+							<div class="item-advantage">
+								<div class="item-advantage__icon">
+									<img src="img/ic_avd1.svg" alt="alt">
+								</div>
+								<div class="title-middle">Назначаем персонального <br>менеджера</div>
+								<p>Назначим персонального менеджера, который будет на связи по всем текущим вопросам в удобном для вас мессенджере.</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="item-advantage">
+								<div class="item-advantage__icon">
+									<img src="img/ic_avd2.svg" alt="alt">
+								</div>
+								<div class="title-middle">Оперативно заменимнеподходящий товар, если вы заказали не ту позицию</div>
+								<p>Заменим неподходящий товар. Подберем альтернативу ушедшим брендам. Подберем оптимальное решение по вашим запросам и возможностям.</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="item-advantage">
+								<div class="item-advantage__icon">
+									<img src="img/ic_avd3.svg" alt="alt">
+								</div>
+								<div class="title-middle">Предоставим необходимую документацию</div>
+								<p>Предоставим всю необходимую документацию. Накладные, гарантийные документы, сертификаты и декларации.</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="item-advantage">
+								<div class="item-advantage__icon">
+									<img src="img/ic_avd4.svg" alt="alt">
+								</div>
+								<div class="title-middle">Принимаем заявки <br>в любом виде</div>
+								<p>Вы можете прислать нам заявку текстом, голосовым сообщением, видео сообщением, приложить фото необходимого оборудования или смету. Работаем во всех мессенджерах.</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="item-advantage">
+								<div class="item-advantage__icon">
+									<img src="img/ic_avd5.svg" alt="alt">
+								</div>
+								<div class="title-middle">Оказываем сопровождение <br>на всех этапах сделки</div>
+								<p>Сопровождаем ваш проект на всех этапах сделки. Оказываем консультативную помощь, помогаем с оформлением смет и документов, привозим и меняем комплектующие в кратчайшие сроки, остаемся с вами в течение гарантийного периода.</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="item-advantage">
+								<div class="item-advantage__icon">
+									<img src="img/ic_avd6.svg" alt="alt">
+								</div>
+								<div class="title-middle">Дарим подарки постоянным <br>клиентам</div>
+								<p>Поддерживаем дружественную атмосферу со всеми нашими заказчиками. Дарим подарки на праздники, участвуем в совместных  мероприятиях. гарантируем максимальную лояльность во всех процессах.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="application">
+			<div class="container">
+				<div class="application-block">
+					<div class="title-section">Оставьте заявку на подбор оборудования</div>
+					<div class="descr-title">Оставьте свой номер телефона и мы перезвоним, чтобы:</div>
+					<div class="row row_application">
+						<div class="col-md-4">
+							<div class="application__item">В зависимости от ваших потребностей или проекта подобрать подходящее оборудование </div>
+						</div>
+						<div class="col-md-4">
+							<div class="application__item">Дать оценку имеющегося проекта <br>и альтернативные варианты по бюджету и срокам поставки </div>
+						</div>
+						<div class="col-md-4">
+							<div class="application__item">Получить КП с точными <br>условиями для дальнейшего заключения договора</div>
+						</div>
+					</div>
+					<form>
+						<div class="row row_main">
+							<div class="col-lg-3 col-md-6">
+								<div class="item-form">
+									<input type="text" placeholder="Имя" required="required">
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6">
+								<div class="item-form">
+									<input type="text" placeholder="Телефон" class="input-phone" required="required">
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6">
+								<div class="file-upload">
+									<label><input type="file" name="file"><i class="far fa-paperclip"></i> Прикрепить файл</label>
+									<div class="name-upload"></div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6">
+								<input type="submit" class="btn-main btn-main_page" value="получить кп">
+							</div>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" required="required" checked="checked" />
+								<span>Согласие на обработку персональных данных</span>
+							</label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section class="partners">
+			<div class="container">
+				<h2 class="title-section">АНТАРЕС - официальный дилер ведущих производителей</h2>
+				<div class="descr-section">энергетического оборудования оборудования для систем водоснабжения, отопления, канализации</div>
+				<ul class="slider-partners">
+					<li>
+						<div class="item-partner">
+							<img src="img/partner1.png" alt="alt">
+						</div>
+					</li>
+					<li>
+						<div class="item-partner">
+							<img src="img/partner2.png" alt="alt">
+						</div>
+					</li>
+					<li>
+						<div class="item-partner">
+							<img src="img/partner3.png" alt="alt">
+						</div>
+					</li>
+					<li>
+						<div class="item-partner">
+							<img src="img/partner4.png" alt="alt">
+						</div>
+					</li>
+					<li>
+						<div class="item-partner">
+							<img src="img/partner5.png" alt="alt">
+						</div>
+					</li>
+					<li>
+						<div class="item-partner">
+							<img src="img/partner6.png" alt="alt">
+						</div>
+					</li>
+					<li>
+						<div class="item-partner">
+							<img src="img/partner1.png" alt="alt">
+						</div>
+					</li>
+					<li>
+						<div class="item-partner">
+							<img src="img/partner2.png" alt="alt">
+						</div>
+					</li>
+					<li>
+						<div class="item-partner">
+							<img src="img/partner3.png" alt="alt">
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="catalog">
+			<div class="container">
+				<div class="catalog-block">
+					<div class="head-section">
+						<h2 class="title-section">Популярные товары</h2>
+						<a href="#" class="link-page">Все товары</a>
+					</div>
+					<ul class="slider-catalog">
+						<li>
+							<div class="item-catalog">
+								<div class="item-catalog__articul">110010</div>
+								<a href="#" class="item-catalog__image">
+									<img src="img/catalog1.png" alt="alt">
+								</a>
+								<a href="#" class="item-catalog__title">Ниппель латунный резьбовой самоуплотняющийся с переходом на «евроконус» VALOGIN</a>
+								<div class="item-catalog__descr">DN 1/2"x3/4"«евроконус»</div>
+								<div class="item-catalog__bottom">
+									<a href="#" class="btn-main">Уточнить стоимость</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-catalog">
+								<div class="item-catalog__articul">110010</div>
+								<a href="#" class="item-catalog__image">
+									<img src="img/catalog1.png" alt="alt">
+								</a>
+								<a href="#" class="item-catalog__title">Ниппель латунный резьбовой самоуплотняющийся с переходом на «евроконус» VALOGIN</a>
+								<div class="item-catalog__descr">DN 1/2"x3/4"«евроконус»</div>
+								<div class="item-catalog__bottom">
+									<a href="#" class="btn-main">Уточнить стоимость</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-catalog">
+								<div class="item-catalog__articul">110010</div>
+								<a href="#" class="item-catalog__image">
+									<img src="img/catalog1.png" alt="alt">
+								</a>
+								<a href="#" class="item-catalog__title">Ниппель латунный резьбовой самоуплотняющийся с переходом на «евроконус» VALOGIN</a>
+								<div class="item-catalog__descr">DN 1/2"x3/4"«евроконус»</div>
+								<div class="item-catalog__bottom">
+									<a href="#" class="btn-main">Уточнить стоимость</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-catalog">
+								<div class="item-catalog__articul">110010</div>
+								<a href="#" class="item-catalog__image">
+									<img src="img/catalog1.png" alt="alt">
+								</a>
+								<a href="#" class="item-catalog__title">Ниппель латунный резьбовой самоуплотняющийся с переходом на «евроконус» VALOGIN</a>
+								<div class="item-catalog__descr">DN 1/2"x3/4"«евроконус»</div>
+								<div class="item-catalog__bottom">
+									<a href="#" class="btn-main">Уточнить стоимость</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-catalog">
+								<div class="item-catalog__articul">110010</div>
+								<a href="#" class="item-catalog__image">
+									<img src="img/catalog1.png" alt="alt">
+								</a>
+								<a href="#" class="item-catalog__title">Ниппель латунный резьбовой самоуплотняющийся с переходом на «евроконус» VALOGIN</a>
+								<div class="item-catalog__descr">DN 1/2"x3/4"«евроконус»</div>
+								<div class="item-catalog__bottom">
+									<a href="#" class="btn-main">Уточнить стоимость</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-catalog">
+								<div class="item-catalog__articul">110010</div>
+								<a href="#" class="item-catalog__image">
+									<img src="img/catalog1.png" alt="alt">
+								</a>
+								<a href="#" class="item-catalog__title">Ниппель латунный резьбовой самоуплотняющийся с переходом на «евроконус» VALOGIN</a>
+								<div class="item-catalog__descr">DN 1/2"x3/4"«евроконус»</div>
+								<div class="item-catalog__bottom">
+									<a href="#" class="btn-main">Уточнить стоимость</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-catalog">
+								<div class="item-catalog__articul">110010</div>
+								<a href="#" class="item-catalog__image">
+									<img src="img/catalog1.png" alt="alt">
+								</a>
+								<a href="#" class="item-catalog__title">Ниппель латунный резьбовой самоуплотняющийся с переходом на «евроконус» VALOGIN</a>
+								<div class="item-catalog__descr">DN 1/2"x3/4"«евроконус»</div>
+								<div class="item-catalog__bottom">
+									<a href="#" class="btn-main">Уточнить стоимость</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="consultation">
+			<div class="container">
+				<div class="consultation-block">
+					<div class="row">
+						<div class="col-lg-6">
+							<h2 class="title-section">закажите доставку к объекту</h2>
+							<div class="descr-section">Оставьте свой номер и мы перезвоним вам для уточнения заказа сроков доставки на объект. Звонок поступит вам в  течение 15 минут</div>
+						</div>
+						<div class="col-lg-6">
+							<form>
+								<div class="row row_main">
+									<div class="col-md-6">
+										<div class="item-form">
+											<input type="text" placeholder="Телефон" class="input-phone" required="required">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<input type="submit" class="btn-main btn-main_page" value="получить консультацию">
+									</div>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" required="required" checked="checked" />
+										<span>Согласие на обработку персональных данных</span>
+									</label>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about">
+			<div class="container">
+				<div class="about__content">
+					<h2 class="title-section">о компании</h2>
+					<div class="text-columns">
+						<p>Компания “АНТАРЕС” работает с 2014 года в Санкт-Петербурге, Ленинградской области и всей России. За это время мы накопили много опыта в сфере поставок инженерной сантехники, насосного оборудования для МКД и промышленных объектов, и мы точно знаем как сэкономить Ваши деньги, время и нервы.</p>
+						<p>Ежедневный анализ рынка, мировой ситуации, сезонности и потребностей наших клиентов, позволяет держать востребованные позиции в наличии на складах в Санкт-Петербурге, Москве, Муроме и Челябинске и заранее заказывать эксклюзивные позиции из Европы и Турции.</p>
+						<p>Вся продукция данных брендов производится на собственных заводах, имеет клеймо-штамп бренда, сертификаты/декларации соответствия, застрахована, защищена гарантией, проверена временем, специализированными аккредитованными лабораториями и довольными заказчиками, имеет широкий референс-лист по РФ, СНГ и всему миру.</p>
+						<p>Если данные бренды являются новыми для вас, мы в любой момент можем продемонстрировать образцы продукции, что бы вы убедились в их качестве и эксплуатационных свойствах, а также предоставить рефернс-листы, в которых указанно, на каких объектах была использована продукция.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="footer__logo">
+							<a href="#" class="logo">
+								<img src="img/logo2.svg" alt="alt">
+							</a>
+							<div class="logo-descr">Поставка инженерного оборудования для систем водоснабжения, отопления, канализации по Ленинградской области</div>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="footer__title">клиентам  <i class="far fa-chevron-down"></i></div>
+						<div class="footer__content">
+							<ul class="footer__nav">
+								<li><a href="#">Каталог</a></li>
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Доставка и оплата</a></li>
+								<li><a href="#">Отзывы</a></li>
+								<li><a href="#">Объекты</a></li>
+								<li><a href="#">Почему мы</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="footer__title">бренды  <i class="far fa-chevron-down"></i></div>
+						<div class="footer__content">
+							<ul class="footer__nav">
+								<li><a href="#">Lammin</a></li>
+								<li><a href="#">VALOGIN</a></li>
+								<li><a href="#">FAF</a></li>
+								<li><a href="#">UNICORN</a></li>
+								<li><a href="#">Dendor</a></li>
+								<li><a href="#">LB Ceramics</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="footer__title">реквизиты  <i class="far fa-chevron-down"></i></div>
+						<div class="footer__content">
+							<p>ИНН: 7802598564</p>
+							<p>КПП: 780201001</p>
+							<p>ОГРН: 1167847423040</p>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="footer__right">
+							<div class="footer__title">контакты  <i class="far fa-chevron-down"></i></div>
+							<div class="footer__content">
+								<p><strong>г. Санкт-Петербург, </strong></p>
+								<p>ул. Репищева, 14Щ</p>
+								<br>
+								<p><strong>г. Москва,</strong> ул. Грина, 1 корпус 3</p>
+								<br>
+								<p><a href="tel:+78124588064">+7 (812) 458-80-64</a></p>
+								<p><a href="mailto:sale4692@spb-antares.ru">sale4692@spb-antares.ru</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg">
+							<a href="#">Политика конфиденциальности </a>
+						</div>
+						<div class="col-lg-2">
+							<p>© Copyright  2024 г.</p>
+						</div>
+						<div class="col-lg">
+							<div class="create">Сделано в <a href="#"><img src="img/copy.svg" alt="alt"></a></div>
+						</div>
+						<div class="col-xl-5 col-lg">
+							<a href="#" class="btn_top"><i class="far fa-arrow-up"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+
+	<div id="callback" class="modal-block">
+		<div class="modal-wrap">
+			<div class="title-form">Оставить заявку</div>
+			<div class="descr-form">Заполните форму и наш специалист перезвонит вам в течение 15 минут</div>
+			<form>
+				<div class="item-form">
+					<input type="text" placeholder="Имя" required="required">
+				</div>
+				<div class="item-form">
+					<input type="text" placeholder="Телефон" class="input-phone" required="required">
+				</div>
+				<input type="submit" class="btn-main btn-main_page" value="Отправить">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" required="required" checked="checked" />
+						<span>Согласие на обработку персональных данных</span>
+					</label>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+	<script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
+	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+	<script src="libs/mask/jquery.maskedinput.js"></script>
+	<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+	<script src="js/common.js?ver=1.1"></script>
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
