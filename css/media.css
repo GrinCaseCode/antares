@@ -1043,6 +1043,13 @@
     .breadcrumbs {
         padding-top: 15px;
         padding-bottom: 20px;
+        display: block;
+    }
+    .breadcrumbs li {
+        display: inline;
+    }
+    .breadcrumbs li::after {
+        margin: 0 7px;
     }
     .item-benefit br,
     .catalog-about br {
@@ -1068,6 +1075,9 @@
     }
     .slider-subcategories .slick-dots {
         bottom: -35px;
+    }
+    .slider-subcategories .slick-slide {
+        padding-right: 1px;
     }
 }
 
