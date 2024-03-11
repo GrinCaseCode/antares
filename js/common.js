@@ -102,6 +102,27 @@ function hasScrolled() {
 		filename_text.html(filename);
 	});
 
+
+	$("div.item-sidebar__head").click(function() {
+		$(this).parent().toggleClass("active");
+		$(this).siblings().slideToggle(200);
+		$(this).parent().siblings(".item-sidebar").removeClass("active");
+		$(this).parent().siblings(".item-sidebar").find(".item-sidebar__content").slideUp(200);
+	  });
+
+	  $(".item-sidebar__haschild").click(function(e) {
+		e.preventDefault();
+		$(this).toggleClass("active");
+		$(this).find("ul").slideToggle(200);
+		$(this).siblings("li").removeClass("active");
+		$(this).siblings("li").find("ul").slideUp(200);
+	  });
+
+	  $(".btn-main_filter").click(function(e) {
+		e.preventDefault();
+		$(".sidebar-catalog").slideToggle(200);
+	});
+
 	//слайдер
 
 	$('.slider-billbord').slick({
@@ -193,6 +214,43 @@ function hasScrolled() {
 			}
 			]
 		});
+
+		$('.slider-subcategories').slick({
+			arrows: true,
+			dots: false,
+			infinite: true,
+			touchThreshold: 1000,
+			slidesToShow: 5,
+			slidesToScroll: 1,
+			prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-long-arrow-left"></i><div/>',
+			nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-long-arrow-right"></i><div/>',
+			responsive: [
+				{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 4,
+					}
+				},
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 2,
+						arrows: false,
+						dots: true,
+					}
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2,
+						arrows: false,
+						dots: true,
+					}
+				}
+				]
+			});
 	
 
 	$(".input-phone").mask("+7 (999) 999-99-99");
