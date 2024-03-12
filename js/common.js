@@ -110,12 +110,12 @@ function hasScrolled() {
 		$(this).parent().siblings(".item-sidebar").find(".item-sidebar__content").slideUp(200);
 	  });
 
-	  $(".item-sidebar__haschild").click(function(e) {
+	  $(".item-sidebar__haschild > a").click(function(e) {
 		e.preventDefault();
-		$(this).toggleClass("active");
-		$(this).find("ul").slideToggle(200);
-		$(this).siblings("li").removeClass("active");
-		$(this).siblings("li").find("ul").slideUp(200);
+		$(this).parent().toggleClass("active");
+		$(this).siblings("ul").slideToggle(200);
+		$(this).parent().siblings("li").removeClass("active");
+		$(this).parent().siblings("li").find("ul").slideUp(200);
 	  });
 
 	  $(".btn-main_filter").click(function(e) {

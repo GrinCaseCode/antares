@@ -1228,6 +1228,7 @@ form {
 }
 .item-sidebar__content li {
 	margin-bottom: 12px;
+	position: relative;
 }
 .item-sidebar__content li a {
 	color: #292929;
@@ -1258,12 +1259,10 @@ form {
 	cursor: pointer;
 	position: relative;
 }
-.item-sidebar__haschild {
-	padding-right: 20px;
-	position: relative;
+.item-sidebar__haschild > a {
 	cursor: pointer;
 }
-.item-sidebar__haschild::after,
+.item-sidebar__haschild > a::after,
 div.item-sidebar__head::after {
 	position: relative;
 	-moz-osx-font-smoothing: grayscale;
@@ -1278,20 +1277,22 @@ div.item-sidebar__head::after {
 	content: "\f078";
 	transition: all 0.3s;
 }
-.item-sidebar__haschild.active::after,
+.item-sidebar__haschild.active > a::after,
 .item-sidebar.active div.item-sidebar__head::after {
 	transform: rotate(180deg);
+}
+.item-sidebar__haschild > a::after {
+	position: absolute;
+	top: 5px;
+	right: 0;
+	text-decoration: none;
+	display:inline;
 }
 .item-sidebar__content ul li ul {
 	display: none;
 }
 .page-categories {
 	padding-bottom: 105px;
-}
-.item-sidebar__haschild::after {
-	top: 5px;
-	right: 0;
-	position: absolute;
 }
 .btn-main_filter {
 	display: none;
